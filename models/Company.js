@@ -21,15 +21,15 @@ Company.init(
             allowNull: false
         },
         description: {
-            type: DataType.TEXT,
+            type: DataTypes.TEXT,
             allowNull: false
         },
         industry: {
-            type: DataType.STRING,
+            type: DataTypes.STRING,
             allowNull: false
         },
         number_reviews: {
-            type: DataType.INT,
+            type: DataTypes.INTEGER,
         }
     },
     {
