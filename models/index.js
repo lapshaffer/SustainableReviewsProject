@@ -1,5 +1,5 @@
 //IMPORT MODELS
-const User = require('/User');
+const User = require('./User');
 const Company = require('./Company');
 const Review = require('./Review');
 
@@ -14,4 +14,3 @@ module.exports = {
     Review,
     Company
 }
-
