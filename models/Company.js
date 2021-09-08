@@ -16,9 +16,20 @@ Company.init(
             allowNull: false,
             unique: true
         },
-        rating: {
-            type: DataTypes.INTEGER,
+        average_rating: {
+            type: DataTypes.DECIMAL,
             allowNull: false
+        },
+        description: {
+            type: DataType.TEXT,
+            allowNull: false
+        },
+        industry: {
+            type: DataType.STRING,
+            allowNull: false
+        },
+        number_reviews: {
+            type: DataType.INT,
         }
     },
     {
