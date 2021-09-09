@@ -1,0 +1,1 @@
+// JS front-end functionality for writing reviews

@@ -1,0 +1,1 @@
+// JS for front-end functionality of editing and deleteing reviews
