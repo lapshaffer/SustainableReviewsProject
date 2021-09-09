@@ -1,0 +1,44 @@
+[
+    {
+      "title": "Wegman's is great",
+      "content": "boujie supermarket performs well",
+      "company_id": 1,
+      "user_id": 1,
+      "rating": 4
+    },
+    {
+      "title": "Wegman's isnt my favourite",
+      "content": "boujie supermarket under performs",
+      "company_id": 1,
+      "user_id": 2,
+      "rating": 2
+    },
+    {
+        "title": "Shoprite's lit yo!",
+        "content": "all the snacks",
+        "company_id": 2,
+        "user_id": 3,
+        "rating": 5
+    },
+    {
+        "title": "everything expensive",
+        "content": "I aint paying that much for bagels",
+        "company_id": 2,
+        "user_id": 1,
+        "rating": 1
+    },
+    {
+        "title": "Soup for life",
+        "content": "I won soup for life and I still love em.  good stuff",
+        "company_id": 3,
+        "user_id": 2,
+        "rating": 5
+    },
+    {
+        "title": "The recipe didnt work",
+        "content": "Recipe on the can failed :(",
+        "company_id": 3,
+        "user_id": 3,
+        "rating": 2
+    }
+]
