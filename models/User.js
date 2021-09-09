@@ -5,7 +5,7 @@ const sequelize = require('../config/connection.js');
 class User extends Model {
     //COMPARE PASSWORD HASHES WHEN USER LOGS IN
     checkPassword(loginPw) {
-        return bycrpt.compareSync(loginPw, this.password);
+        return bcrypt.compareSync(loginPw, this.password);
     }
 }
 
