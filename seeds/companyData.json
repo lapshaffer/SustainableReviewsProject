@@ -1,0 +1,23 @@
+[
+    {
+      "name": "Wegman's SAMPLE",
+      "average_rating": 4,
+      "description": "boujie supermarket",
+      "industry": "Food",
+      "number_reviews": 3
+    },
+    {
+        "name": "Shoprite's SAMPLE",
+        "average_rating": 3.5,
+        "description": "your neighborhood supermarket",
+        "industry": "Food",
+        "number_reviews": 7
+    },
+    {
+        "name": "Campbell's SAMPLE",
+        "average_rating": 3.77,
+        "description": "Soup producer",
+        "industry": "Manufactuering",
+        "number_reviews": 142
+    }
+]
