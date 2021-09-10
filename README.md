@@ -38,8 +38,8 @@ ADD EMAILS HERE
 
 # Github
 If you'd like to see more of our work, please visit:
-[kingcrowz](https://github.com/kingcrowz)
-[lapshaffer](https://github.com/lapshaffer)
-[chillaroo](https://github.com/Chillaroo)
-[jeffMullen](https://github.com/jeffMullen)
+* [kingcrowz](https://github.com/kingcrowz)
+* [lapshaffer](https://github.com/lapshaffer)
+* [chillaroo](https://github.com/Chillaroo)
+* [jeffMullen](https://github.com/jeffMullen)
 
