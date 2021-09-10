@@ -1,7 +1,5 @@
-:root {
-    --dark-green: #79B791;
-    --light-green: #ABD1B5;
-    --background: #EDF4ED;
-    --light-brown: #51291E;
-    --dark-brown: #301014;
-};
+header {
+  background: #79B791;
+  color: #EDF4ED;
+}
+/*# sourceMappingURL=style.css.map */
