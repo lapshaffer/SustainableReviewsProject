@@ -18,7 +18,7 @@ router.post('/', async (req, res) => {
     }
 });
 
-//GET ONE COMPANY BY ID
+// GET ONE COMPANY BY ID WITH REVIEWS
 router.get('/:id', async (req, res) => {
     try {
         const companyData = await Company.findByPk(req.params.id, {
@@ -28,6 +28,16 @@ router.get('/:id', async (req, res) => {
             res.status(404).json({ message: 'No company found with this id!' });
             return;
         }
+        res.status(200).json(companyData);
+    } catch (err) {
+        res.status(400).json(err);
+    }
+});
+
+// GET ALL COMPANIES
+router.get('/', async (req, res) => {
+    try {
+        const companyData = await Company.findAll({ include: [{ model: Review }] });
         res.status(200).json(companyData);
     } catch (err) {
         res.status(400).json(err);
