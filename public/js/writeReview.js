@@ -4,10 +4,10 @@ const submitReview = require('#submitReview');
 submitReview.addeventListener('click', async (event) => {
     event.preventDefault();
 
-    const title = document.querySelector('#title');
-    const content = document.querySelector('#content');
-    const date = document.querySelector('#date');
-    const companyId = document.querySelector('#companyId');
+    const title = document.querySelector('#title').value.trim();
+    const content = document.querySelector('#content').value.trim();
+    // const date = document.querySelector('#date');
+    const companyId = event.target.getAttribute('data-id');
     const rating = document.querySelector('#rating').value;
 
     const review = await fetch('/api/reviews', {
