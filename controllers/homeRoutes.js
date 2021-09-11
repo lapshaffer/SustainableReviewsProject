@@ -4,14 +4,7 @@ const { Company, User, Review } = require('../models');
 
 router.get('/', async (req, res) => {
   try {
-    const CompanyData = await Company.findAll({
-      include: [
-        {
-          model: Review,
-          // attributes: ['rating'],
-        },
-      ],
-    });
+    const CompanyData = await Company.findAll({});
 
     const companies = CompanyData.map((company) => company.get({ plain: true }));
     res.render('homepage', {
