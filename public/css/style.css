@@ -1,5 +1,37 @@
-header {
-  background: #79B791;
-  color: #EDF4ED;
+:root {
+  --dark-green: #79B791;
+  --light-green: #ABD1B5;
+  --background: #EDF4ED;
+  --light-brown: #51291E;
+  --dark-brown: #301014;
+};
+
+body {
+  width: 100%;
 }
-/*# sourceMappingURL=style.css.map */
+
+header {
+  background: var(--dark-green);
+}
+
+header nav {
+  background: var(--dark-green);
+  color: var(--background);
+}
+
+header button.btn {
+  background: var(--light-green);
+}
+
+header .navbar-brand {
+  color: var(--light-brown);
+  font-size: 30px;
+}
+
+header a.nav-link {
+  color: var(--background);
+}
+
+header a:hover {
+  text-decoration: none;
+}
