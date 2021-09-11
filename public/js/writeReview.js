@@ -23,6 +23,6 @@ submitReview.addeventListener('click', async (event) => {
     })
 
     if (review.ok) {
-        // document.location.replace('/company')
+        document.location.replace(`/company/${companyId}`);
     }
 })
