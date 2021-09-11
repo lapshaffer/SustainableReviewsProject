@@ -1,18 +1,15 @@
 const router = require('express').Router();
 const { Company, Review, User } = require('../../models');
+const Sequelize = require('sequelize');
 
-// GET ALL REVIEWS BY COMPANY ID - Works
+// GET ALL REVIEWS BY COMPANY ID
 router.get('/company/:id', async (req, res) => {
     try {
-        const companyReviews = await Review.findAll(
-            {
-                where: {
+        const companyReviews = await Review.findAll({
+            where: {
                     company_id: req.params.id
-                }
             }
-        )
-        
-        /* Company.findByPk(req.params.id, { include: [{ model: Review }] }); */
+        });
         res.status(200).json(companyReviews);
     } catch (err) {
         res.status(400).json(err);
@@ -46,7 +43,7 @@ router.put('/:id', async (req, res) => {
             },
         });
         console.log(updatedReview);
-        if (updatedReview[0]===0){
+        if (updatedReview[0] === 0) {
             res.status(404).json("Review not found or review content unchanged.")
         }
         res.status(200).json(updatedReview);
@@ -60,8 +57,8 @@ router.put('/:id', async (req, res) => {
 router.delete('/:id', async (req, res) => {
     try {
         const deletedReview = await Review.destroy({
-            where: { 
-                id: req.params.id 
+            where: {
+                id: req.params.id
             }
         });
         res.status(200).json(deletedReview);

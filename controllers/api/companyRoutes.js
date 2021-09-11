@@ -1,5 +1,6 @@
 const router = require('express').Router();
-const {User, Company, Review} = require('../../models');
+const { User, Company, Review } = require('../../models');
+const Sequelize = require('sequelize');
 
 // CREATE NEW COMPANY
 router.post('/', async (req, res) => {
@@ -18,11 +19,25 @@ router.post('/', async (req, res) => {
     }
 });
 
-// GET ONE COMPANY BY ID WITH REVIEWS
+// GET ONE COMPANY BY ID WITH REVIEWS & GET AVERAGE RATING
 router.get('/:id', async (req, res) => {
     try {
         const companyData = await Company.findByPk(req.params.id, {
-            include: [{ model: Review }]
+            attributes: {
+                include: [
+                    [
+                        Sequelize.literal(`
+                            (SELECT AVG(review.rating)
+                            FROM review
+                            WHERE review.company_id=company.id)
+                        `),
+                        "avg_rating"
+                    ]
+                ]
+            },
+            include: [
+                { model: Review }
+            ]
         });
         if (!companyData) {
             res.status(404).json({ message: 'No company found with this id!' });
@@ -30,6 +45,7 @@ router.get('/:id', async (req, res) => {
         }
         res.status(200).json(companyData);
     } catch (err) {
+        console.log(err);
         res.status(400).json(err);
     }
 });
