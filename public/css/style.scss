@@ -6,5 +6,8 @@ $dark-brown: #301014;
 
 header {
     background: $dark-green;
-    color: $background;
+    nav {
+        background: $dark-green;
+        color: $background;
+    }
 }
