@@ -4,7 +4,15 @@ const { Company, Review, User } = require('../../models');
 // GET ALL REVIEWS BY COMPANY ID - Works
 router.get('/company/:id', async (req, res) => {
     try {
-        const companyReviews = await Company.findByPk(req.params.id, { include: [{ model: Review }] });
+        const companyReviews = await Review.findAll(
+            {
+                where: {
+                    company_id: req.params.id
+                }
+            }
+        )
+        
+        /* Company.findByPk(req.params.id, { include: [{ model: Review }] }); */
         res.status(200).json(companyReviews);
     } catch (err) {
         res.status(400).json(err);
