@@ -1,5 +1,26 @@
 header {
   background: #79B791;
+}
+
+header nav {
+  background: #79B791;
   color: #EDF4ED;
+}
+
+header nav button {
+  background: #ABD1B5;
+}
+
+header .navbar-brand {
+  color: #51291E;
+  font-size: 30px;
+}
+
+header a.nav-link {
+  color: #EDF4ED;
+}
+
+header a:hover {
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */

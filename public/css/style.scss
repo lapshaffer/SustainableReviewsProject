@@ -9,5 +9,18 @@ header {
     nav {
         background: $dark-green;
         color: $background;
+        button {
+            background: $light-green !important;
+        }
+    }
+    .navbar-brand {
+        color: $light-brown !important;
+        font-size: 30px;
+    }
+    a {
+        color: $background !important;
+    }
+    a:hover {
+        text-decoration: none;
     }
 }
