@@ -39,10 +39,10 @@ Review.init(
                 model: user,
                 key: 'id',
             },
+        },
         rating: {
             type: DataTypes.INTEGER,
         }
-        },
     },
     {
         sequelize,
