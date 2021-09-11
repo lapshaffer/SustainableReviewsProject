@@ -1,26 +1,37 @@
+:root {
+  --dark-green: #79B791;
+  --light-green: #ABD1B5;
+  --background: #EDF4ED;
+  --light-brown: #51291E;
+  --dark-brown: #301014;
+};
+
+body {
+  width: 100%;
+}
+
 header {
-  background: #79B791;
+  background: var(--dark-green);
 }
 
 header nav {
-  background: #79B791;
-  color: #EDF4ED;
+  background: var(--dark-green);
+  color: var(--background);
 }
 
-header nav button {
-  background: #ABD1B5;
+header button.btn {
+  background: var(--light-green);
 }
 
 header .navbar-brand {
-  color: #51291E;
+  color: var(--light-brown);
   font-size: 30px;
 }
 
 header a.nav-link {
-  color: #EDF4ED;
+  color: var(--background);
 }
 
 header a:hover {
   text-decoration: none;
 }
-/*# sourceMappingURL=style.css.map */
