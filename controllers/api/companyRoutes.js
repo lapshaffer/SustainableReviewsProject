@@ -6,7 +6,7 @@ router.post('/', async (req, res) => {
     try {
         if (!req.session.logged_in) {
             res.status(400).json("User is not logged in");
-            return
+            return;
         }
         req.body.user_id = req.session.user_id;
         const newCompany = await Company.create(req.body);
