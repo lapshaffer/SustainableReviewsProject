@@ -3,4 +3,16 @@
 - Submit button to update review in database
 - Button to delete this review from the site -->
 
+<div class="card">
+    <h3 class="card-header">Edit your review:</h3>
+    <form class="card-body edit-review-form">
+        <label for="review-title" class="form-label">Title:</label>
+        <input name="review-title" type="text" value="{{review.title}}" class="form-input" />
+        <label class="form-label" for="content">Content:</label>
+        <input name="content" type="text" value="{{review.content}}" class="form-input" />
+        <button type="submit" class="btn">Update your review!</button>
+        <button type="button" class="delete-review-btn btn">Delete your review</button>
+    </form>
+</div>
+
 <script src="/js/editDeleteReview.js"></script>
