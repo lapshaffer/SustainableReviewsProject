@@ -25,7 +25,7 @@ header button.btn {
 
 header .navbar-brand {
   color: var(--light-brown);
-  font-size: 30px;
+  font-size: 35px;
 }
 
 header a.nav-link {
@@ -34,4 +34,8 @@ header a.nav-link {
 
 header a:hover {
   text-decoration: none;
+}
+
+#featured-company p {
+  font-size: 20px;
 }
