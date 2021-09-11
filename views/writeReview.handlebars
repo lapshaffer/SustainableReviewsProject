@@ -16,7 +16,8 @@
             </div>
             <!--Search bar to look for company, will need to add jQuery to auto-populate company names as user types-->
             <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <label for="company-name">Company:</label>
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="company-name-search">
                 <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
             <div class="form-group">
@@ -30,3 +31,4 @@
     </div>
 
     <script src="/js/writeReview.js"></script>
+    <script src="/js/autocomplete.js"></script>
