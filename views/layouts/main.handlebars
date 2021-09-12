@@ -17,48 +17,57 @@
 
 <body>
     <header class='container-fluid'>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
+        <div class="row d-flex justify-content-between">
+            <div class="col-4">
                 <a class="navbar-brand" href="/">Grove</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        {{#if loggedIn}}
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Logout</a>
-                        </li>
-                        {{else}}
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Login</a>
-                        </li>
-                        {{/if}}
-                        {{#if loggedIn}}
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">{{user.name}}</a>
-                        </li>
-                        {{/if}}
-                        {{#if loggedIn}}
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Leave a Review</a>
-                        </li>
-                        {{else}}
-                        <li class="nav-item">
-                            <a class="nav-link disabled">Leave a Review</a>
-                        </li>
-                        {{/if}}
-                    </ul>
-                    <form class="d-flex">
-                         <!--Search bar to look for company, will need to add jQuery to auto-populate company names as user types-->
-                        <input class="form-control me-2 col-2" type="search" placeholder="Search" aria-label="Search" id="company-name-search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
             </div>
-        </nav>
+            <nav class="navbar navbar-expand-lg col-3">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-4">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                {{#if loggedIn}}
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Logout</a>
+                                </li>
+                                {{else}}
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Login</a>
+                                </li>
+                                {{/if}}
+                                {{#if loggedIn}}
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">{{user.name}}</a>
+                                </li>
+                                {{/if}}
+                                {{#if loggedIn}}
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Leave a Review</a>
+                                </li>
+                                {{else}}
+                                <li class="nav-item">
+                                    <a class="nav-link disabled">Leave a Review</a>
+                                </li>
+                                {{/if}}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="col-3 d-flex align-items-center">
+                <form class="d-flex justify-content-end">
+                    <!--Search bar to look for company, will need to add jQuery to auto-populate company names as user types-->
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                        id="company-name-search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
     </header>
 
     {{{ body }}}
