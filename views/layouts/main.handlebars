@@ -23,13 +23,13 @@
         <div class="row d-flex justify-content-between">
             <div class="col-4 ml-2">
                 <a class="navbar-brand" id="site-title" href="/">Grove</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            </div>
+            <nav class="navbar navbar-expand-lg col-6 align-self-end d-flex justify-content-end">
+                <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-            </div>
-            <nav class="navbar navbar-expand-lg col-6 align-self-end">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <div class="col-6">
                         <ul class="row navbar-nav me-auto mb-2 mb-lg-0">
@@ -38,7 +38,7 @@
                                 <a class="nav-link active" aria-current="page" href="#">Logout</a>
                             </li>
                             {{else}}
-                            <li class="nav-item col-6 text-end">
+                            <li class="nav-item col-6 col-lg-4 text-end">
                                 <a class="nav-link" href="#">Login</a>
                             </li>
                             {{/if}}
@@ -52,7 +52,7 @@
                                 <a class="nav-link" href="#">Leave a Review</a>
                             </li>
                             {{else}}
-                            <li class="nav-item leave-review col-6">
+                            <li class="nav-item leave-review col-6 col-lg-8">
                                 <a class="nav-link disabled">Leave a Review</a>
                             </li>
                             {{/if}}
