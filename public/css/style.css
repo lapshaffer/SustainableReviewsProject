@@ -5,6 +5,8 @@
   --light-brown: #51291E;
   --dark-brown: #301014;
   --heading-font: 'Slabo 27px', serif;
+  --link-green: #0D940B;
+  --link-green-hover: #095F07;
 };
 
 body {
@@ -48,8 +50,30 @@ header #site-title {
 }
 
 /* HOMEPAGE FEATURED COMPANY STYLES */
-#featured-company p {
+#mission p {
   font-size: 18px;
+}
+
+a {
+  color: var(--link-green);
+  text-decoration: none;
+  transition: .5s;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--link-green-hover);
+}
+
+#featured-company {
+  padding: 15px 0;
+  border: 1px solid var(--light-green);
+  border-radius: 11px;
+  box-shadow: -3px 3px 3px var(--light-green);
+}
+
+#featured-company h3 {
+  font-size: 24px;
 }
 
 /* LOGIN STYLES */
