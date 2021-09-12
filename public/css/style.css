@@ -54,4 +54,9 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
+  background: var(--dark-green);
+}
+
+footer p {
+  font-size: 15px;
 }
