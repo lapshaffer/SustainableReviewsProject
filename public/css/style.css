@@ -10,6 +10,7 @@ body {
   width: 100%;
 }
 
+/* HEADER STYLES */
 header {
   background: var(--dark-green);
 }
@@ -36,6 +37,7 @@ header a:hover {
   text-decoration: none;
 }
 
+/* HOMEPAGE FEATURED COMPANY STYLES */
 #featured-company p {
   font-size: 20px;
 }
