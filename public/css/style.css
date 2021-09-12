@@ -4,6 +4,7 @@
   --background: #EDF4ED;
   --light-brown: #51291E;
   --dark-brown: #301014;
+  --heading-font: 'Slabo 27px', serif;
 };
 
 body {
@@ -24,17 +25,20 @@ header button.btn {
   background: var(--light-green);
 }
 
-header .navbar-brand {
-  color: var(--light-brown);
-  font-size: 35px;
-}
-
 header a.nav-link {
   color: var(--background);
 }
 
 header a:hover {
   text-decoration: none;
+}
+
+header #site-title {
+  color: var(--light-brown);
+  font-size: 35px;
+  font-family: var(--heading-font);
+  font-weight: bold;
+  letter-spacing: .1rem;
 }
 
 /* HOMEPAGE FEATURED COMPANY STYLES */
