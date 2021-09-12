@@ -43,9 +43,26 @@ header #site-title {
   letter-spacing: .1rem;
 }
 
+.navbar-toggler:focus {
+  outline: 0px;
+}
+
 /* HOMEPAGE FEATURED COMPANY STYLES */
 #featured-company p {
   font-size: 20px;
+}
+
+/* LOGIN STYLES */
+h2 {
+  font-size: 26px;;
+}
+
+.login-form label {
+  font-size: 18px;
+}
+
+.login-form input {
+  height: 40px;
 }
 
 /* FOOTER STYLES */
