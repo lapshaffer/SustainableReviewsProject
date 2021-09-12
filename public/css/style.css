@@ -9,6 +9,8 @@
 
 body {
   width: 100%;
+  position: relative;
+  min-height: 100vh;
 }
 
 /* HEADER STYLES */
@@ -44,4 +46,12 @@ header #site-title {
 /* HOMEPAGE FEATURED COMPANY STYLES */
 #featured-company p {
   font-size: 20px;
+}
+
+/* FOOTER STYLES */
+footer {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
