@@ -17,7 +17,8 @@ html {
 body {
   width: 100%;
   position: relative;
-  min-height: 100vh;
+  min-height: 100%;
+  overflow-x: hidden;
 }
 
 /* HEADER STYLES */
@@ -100,9 +101,9 @@ h2 {
 #login-container,
 #signup-container {
   height: 93vh;
+  width: 100%;
   padding: 0;
 }
-
 /* 
 #mission-container div,
 #login-container div,
@@ -124,7 +125,7 @@ h2 {
   background-image: url("../images/lake.jpg");
   background-size: cover;
   overflow: hidden;
-  width: 50%;
+   width: 50%;
 }
 
 /* #signup-image {
@@ -143,8 +144,6 @@ footer {
   bottom: 0;
   width: 100%;
   background: var(--dark-green);
-  opacity: 90%;
-
 }
 
 footer p {
