@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Company, User, Review } = require('../models');
+const { Company, User, Review, Image } = require('../models');
 // const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
@@ -27,14 +27,24 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
-router.get('/signup', (req, res) => {
+router.get('/signup', async (req, res) => {
   // If the user is already logged in, redirect the request to another route
-  // if (req.session.logged_in) {
-  //   res.redirect('/profile');
-  //   return;
-  // }
+  if (req.session.logged_in) {
+    res.redirect('/profile');
+    return;
+  }
+  try {
+    const imageData = await Image.findAll({});
+    const image = imageData[0].get({ plain: true });
+    console.log(image)
+    res.render('signup', {
+      image
+    });
 
-  res.render('signup');
+  } catch (err) {
+    res.status(500).json(err);
+    console.log(err);
+  }
 });
 
 module.exports = router;

@@ -76,15 +76,17 @@ a:hover {
   font-size: 24px;
 }
 
-/* LOGIN STYLES */
+/* LOGIN and SIGNUP STYLES */
 h2 {
   font-size: 26px;;
 }
 
+.signup-form label,
 .login-form label {
   font-size: 18px;
 }
 
+.signup-form input,
 .login-form input {
   height: 40px;
 }
