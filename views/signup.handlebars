@@ -3,23 +3,32 @@
 - Password
 - Link to login page if user already has an account -->
 
-<div class="row">
-    <div class="col-md-6">
-        <h2>Signup</h2>
+<div id="signup-container" class="container-fluid d-flex flex-row justify-content-between">
+    <div class="row w-100">
+        {{!-- Large signup image --}}
+        <div id="signup-image" class="col-6 p-0">
+            {{!-- <img src="/images/{{image.filename}}" alt="{{image.description}}"> --}}
+        </div>
 
-        <form class="form signup-form">
-            <div class="form-group">
-                <label for="signupName">username:</label>
-                <input class="form-input" type="text" id="signupName" />
+        <div class="col-6 p-0 d-flex justify-content-center">
+            <div class="row w-75 d-flex flex-column justify-content-center">
+                <h2>Signup</h2>
+
+                <form class="form signup-form">
+                    <div class="form-group">
+                        <label for="signupName">Username:</label>
+                        <input class="form-input" type="text" id="signupName" />
+                    </div>
+                    <div class="form-group">
+                        <label for="signupPassword">Password:</label>
+                        <input class="form-input" type="password" id="signupPassword" />
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary" id="signupSubmit" type="submit">Signup</button>
+                    </div>
+                </form>
             </div>
-            <div class="form-group">
-                <label for="signupPassword">password:</label>
-                <input class="form-input" type="password" id="signupPassword" />
-            </div>
-            <div class="form-group">
-                <button class="btn btn-primary" id="signupSubmit" type="submit">signup</button>
-            </div>
-        </form>
+        </div>
     </div>
 </div>
 

@@ -4,12 +4,22 @@
   --background: #EDF4ED;
   --light-brown: #51291E;
   --dark-brown: #301014;
+  --heading-font: 'Slabo 27px', serif;
+  --link-green: #0D940B;
+  --link-green-hover: #095F07;
 };
+
+html {
+  min-height: 100vh;
+}
 
 body {
   width: 100%;
+  position: relative;
+  min-height: 100vh;
 }
 
+/* HEADER STYLES */
 header {
   background: var(--dark-green);
 }
@@ -23,11 +33,6 @@ header button.btn {
   background: var(--light-green);
 }
 
-header .navbar-brand {
-  color: var(--light-brown);
-  font-size: 35px;
-}
-
 header a.nav-link {
   color: var(--background);
 }
@@ -36,6 +41,89 @@ header a:hover {
   text-decoration: none;
 }
 
-#featured-company p {
-  font-size: 20px;
+header #site-title {
+  color: var(--light-brown);
+  font-size: 35px;
+  font-family: var(--heading-font);
+  font-weight: bold;
+  letter-spacing: .1rem;
+}
+
+.navbar-toggler:focus {
+  outline: 0px;
+}
+
+/* HOMEPAGE FEATURED COMPANY STYLES */
+#mission p {
+  font-size: 17px;
+}
+
+a {
+  color: var(--link-green);
+  text-decoration: none;
+  transition: .5s;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--link-green-hover);
+}
+
+#featured-company {
+  padding: 15px 0;
+  border: 1px solid var(--light-green);
+  border-radius: 7px;
+  box-shadow: -3px 3px 3px #E3DEDE;
+}
+
+#featured-company h3 {
+  font-size: 24px;
+}
+
+/* LOGIN and SIGNUP STYLES */
+h2 {
+  font-size: 26px;;
+}
+
+.signup-form label,
+.login-form label {
+  font-size: 18px;
+}
+
+.signup-form input,
+.login-form input {
+  height: 40px;
+}
+
+#signup-container {
+  height: 93vh;
+}
+
+#signup-image {
+  /* height: 100vh; */
+  background-image: url("../images/windmills.jpg");
+  background-size: cover;
+  overflow: hidden;
+}
+
+/* #signup-image {
+  height: 100vh
+}
+
+img {
+  max-height: 100vh;
+  width: 50vw;
+} */
+
+/* FOOTER STYLES */
+footer {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: var(--dark-green);
+}
+
+footer p {
+  font-size: 15px;
 }
