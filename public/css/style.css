@@ -149,3 +149,8 @@ footer {
 footer p {
   font-size: 15px;
 }
+
+canvas {
+  max-width: 200px;
+  max-height: 300px;
+}
