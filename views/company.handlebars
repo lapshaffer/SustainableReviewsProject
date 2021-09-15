@@ -4,13 +4,15 @@
 - Average rating (average compiled from all user reviews)
 - All reviews for that company, showing their title, content and rating -->
 
-<div class="container">
+<div id="company-overview" class="container mt-5">
     <div class="row">
-        <h1>{{company.name}}</h1>
+        <h1 id="company-name" class="text-center">{{company.name}}</h1>
     </div>
     <div class="row justify-content-around">
         <div class="col-4">
-            <p><!--Replacing average rating from model (deleted) w/ const from company get route--></p>
+            <p>
+                <!--Replacing average rating from model (deleted) w/ const from company get route-->
+            </p>
         </div>
         <div class="col-8">
             <p>{{company.description}}</p>
@@ -21,8 +23,8 @@
         <div class="col">
             {{#each company.reviews as |review|}}
             {{> review-details parent=..}}
-{{!--             <div class="card-body">
-            <p>For each review, print the review card that shows the title, rating and content of the review</p>
+            {{!-- <div class="card-body">
+                <p>For each review, print the review card that shows the title, rating and content of the review</p>
             </div> --}}
             {{/each}}
         </div>

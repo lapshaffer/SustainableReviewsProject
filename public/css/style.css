@@ -141,13 +141,13 @@ h2 {
    width: 50%;
 }
 
-/* #signup-image {
-  height: 100vh
+/* COMPANY PAGE STYLES */
+#company-overview {
+  min-height: 93vh;
 }
-
-img {
-  max-height: 100vh;
-  width: 50vw;
+/* 
+#company-name {
+  margin: auto;
 } */
 
 /* FOOTER STYLES */
