@@ -17,12 +17,13 @@
         </div>
     </div>
     <div class="row">
-        {{#if reviews.length}}
+        {{#if company.reviews.length}}
         <div class="col">
-            {{#each reviews as |review|}}
-            <div class="card-body">
+            {{#each company.reviews as |review|}}
+            {{> review-details parent=..}}
+{{!--             <div class="card-body">
             <p>For each review, print the review card that shows the title, rating and content of the review</p>
-            </div>
+            </div> --}}
             {{/each}}
         </div>
         {{else}}
