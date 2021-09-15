@@ -76,10 +76,13 @@ a:hover {
   border: 1px solid var(--light-green);
   border-radius: 7px;
   box-shadow: -3px 3px 3px #E3DEDE;
+  height: 25%;
+  width: 75%;
 }
 
 #featured-company h3 {
   font-size: 24px;
+  border-right: 1px solid var(--light-green);
 }
 
 /* LOGIN and SIGNUP STYLES */
@@ -104,6 +107,15 @@ h2 {
   width: 100%;
   padding: 0;
 }
+
+#mission-description-wrapper {
+  height: 50%;
+}
+
+.mission-description {
+  width: 75%;
+}
+
 /* 
 #mission-container div,
 #login-container div,
@@ -113,16 +125,17 @@ h2 {
 
 
 
-#signup-image {
+#login-image {
   /* height: 100vh; */
-  background-image: url("../images/windmills.jpg");
+  background-image: url("../images/lake.jpg");
   background-size: cover;
   overflow: hidden;
   width: 50%;
 }
 
+#signup-image,
 #mission-image {
-  background-image: url("../images/lake.jpg");
+  background-image: url("../images/windmills.jpg");
   background-size: cover;
   overflow: hidden;
    width: 50%;
