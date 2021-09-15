@@ -141,6 +141,8 @@ h2 {
   background-color: var(--light-green);
 }
 
+/* WRITE REVIEW */
+
 .star-rating div {
   font-size: 20px;
 }
@@ -157,6 +159,9 @@ h2 {
 #reviewContent {
   height: 100px;
 }
+
+/* PREVIOUS REVIEWS */
+
 
 /* FOOTER STYLES */
 footer {
