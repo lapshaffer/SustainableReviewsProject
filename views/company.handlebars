@@ -8,19 +8,33 @@
     <div class="row">
         <h1 id="company-name" class="text-center">{{company.name}}</h1>
     </div>
-    <div class="row justify-content-around">
-        <div class="col-4">
-            <p>
-                <!--Replacing average rating from model (deleted) w/ const from company get route-->
+    <div class="row justify-content-around mt-5">
+        <div class="col-md-4">
+            <p class="text-md-end text-sm-center">
+                Average Rating
             </p>
         </div>
-        <div class="col-8">
+        <div class="col-md-4 text-md-start text-sm-center">
             <p>{{company.description}}</p>
         </div>
     </div>
-    <div class="row">
+    <div class="row d-flex justify-content-evenly mt-5">
+        <div class="col-4">
+            <div id="write-review" class="card">
+                <h2 class="card-header">Review {{company.name}}</h2>
+                <form class="write-review-body">
+                    <div class="form-group p-3">
+                        <label for="reviewContent">Review</label>
+                        <textarea type="text" class="form-control" id="reviewContent"></textarea>
+                        <button id="reviewSubmit" class="btn btn-success mt-3" data-post-id="{{post.id}}"
+                            data-user-id="{{userId}}">Submit Review</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
         {{#if company.reviews.length}}
-        <div class="col">
+        <div class="col-4">
             {{#each company.reviews as |review|}}
             {{> review-details parent=..}}
             {{!-- <div class="card-body">
