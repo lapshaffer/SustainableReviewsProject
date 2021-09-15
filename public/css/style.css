@@ -143,12 +143,15 @@ h2 {
 
 /* WRITE REVIEW */
 
-.star-rating div {
+.star-wrapper div {
   font-size: 20px;
 }
 
-.star-rating div:hover {
+.star-wrapper:hover {
   cursor: pointer;
+}
+
+.star-wrapper div:hover {
   text-shadow: 0 0 5px rgb(255, 234, 0);
 }
 

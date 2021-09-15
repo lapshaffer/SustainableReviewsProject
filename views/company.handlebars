@@ -9,7 +9,7 @@
         <h1 id="company-name" class="text-center">{{company.name}}</h1>
     </div>
     <div class="row justify-content-around mt-5">
-        <div class="col-md-4">
+        <div id="average-rating" class="col-md-4">
             <p class="text-md-end text-sm-center">
                 Average Rating
             </p>
@@ -23,11 +23,13 @@
             <div id="write-review" class="card">
                 <h2 class="pl-3 pt-2 pb-2">Review {{company.name}}</h2>
                 <div class="star-rating d-flex">
-                    <div data-rating="1" class="col-1">⭐️</div>
-                    <div data-rating="2" class="col-1">⭐️</div>
-                    <div data-rating="3" class="col-1">⭐️</div>
-                    <div data-rating="4" class="col-1">⭐️</div>
-                    <div data-rating="5" class="col-1">⭐️</div>
+                    <div class="star-wrapper col-5 d-flex">
+                        <div data-rating="1" class="col-1">⭐️</div>
+                        <div data-rating="2" class="col-1">⭐️</div>
+                        <div data-rating="3" class="col-1">⭐️</div>
+                        <div data-rating="4" class="col-1">⭐️</div>
+                        <div data-rating="5" class="col-1">⭐️</div>
+                    </div>
                     <p class="col-7">Choose a rating</p>
                 </div>
                 <form class="write-review-body">
@@ -37,7 +39,6 @@
                             data-user-id="{{userId}}">Submit Review</button>
                     </div>
                 </form>
-
             </div>
         </div>
         {{#if company.reviews.length}}

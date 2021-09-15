@@ -65,7 +65,7 @@ router.get('/company/:id', async (req, res) => {
         ]
       },
       include: [
-        { model: Review, include: [User]}
+        { model: Review, include: [User] }
       ]
     });
     if (!companyData) {
@@ -76,7 +76,7 @@ router.get('/company/:id', async (req, res) => {
 
     let reviews = company.reviews;
 
-     reviews = reviews.map((review)=> {
+    reviews = reviews.map((review) => {
       console.log(review.date_created);
       let date = review.date_created;
       date = date.toString();
@@ -87,7 +87,8 @@ router.get('/company/:id', async (req, res) => {
       review.date_created = `${date[1]} ${date[2]} ${date[3]}`;
       return review;
     });
-    
+    console.log(company);
+
     res.render('company', {
       company,
       logged_in: req.session.logged_in,
