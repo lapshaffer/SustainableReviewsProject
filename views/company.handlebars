@@ -21,10 +21,17 @@
     <div class="row d-flex justify-content-evenly mt-5">
         <div class="col-4">
             <div id="write-review" class="card">
-                <h2 class="card-header">Review {{company.name}}</h2>
+                <h2 class="p-3">Review {{company.name}}</h2>
+                <div class="star-rating d-flex">
+                    <div data-rating="1" class="col-1">⭐️</div>
+                    <div data-rating="2" class="col-1">⭐️</div>
+                    <div data-rating="3" class="col-1">⭐️</div>
+                    <div data-rating="4" class="col-1">⭐️</div>
+                    <div data-rating="5" class="col-1">⭐️</div>
+                    <p class="col-7">Choose a rating</p>
+                </div>
                 <form class="write-review-body">
-                    <div class="form-group p-3">
-                        <label for="reviewContent">Review</label>
+                    <div class="form-group pl-3 pr-3">
                         <textarea type="text" class="form-control" id="reviewContent"></textarea>
                         <button id="reviewSubmit" class="btn btn-success mt-3" data-post-id="{{post.id}}"
                             data-user-id="{{userId}}">Submit Review</button>

@@ -116,15 +116,6 @@ h2 {
   width: 75%;
 }
 
-/* 
-#mission-container div,
-#login-container div,
-#signup-container div {
-  width: 100%;
-} */
-
-
-
 #login-image {
   /* height: 100vh; */
   background-image: url("../images/lake.jpg");
@@ -146,10 +137,26 @@ h2 {
   min-height: 93vh;
 }
 
-/* 
-#company-name {
-  margin: auto;
-} */
+.card {
+  background-color: var(--light-green);
+}
+
+.star-rating div {
+  font-size: 20px;
+}
+
+.star-rating div:hover {
+  cursor: pointer;
+  text-shadow: 0 0 5px rgb(255, 234, 0);
+}
+
+.star-rating p {
+  font-size: 14px;
+}
+
+#reviewContent {
+  height: 100px;
+}
 
 /* FOOTER STYLES */
 footer {
