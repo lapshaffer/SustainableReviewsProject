@@ -1,5 +1,7 @@
 const router = require('express').Router();
 const { Company, User, Review, Image } = require('../models');
+const Sequelize = require('sequelize');
+const { parse } = require('dotenv');
 // const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
@@ -43,6 +45,56 @@ router.get('/signup', async (req, res) => {
 
   } catch (err) {
     res.status(500).json(err);
+    console.log(err);
+  }
+});
+
+router.get('/company/:id', async (req, res) => {
+  try {
+    const companyData = await Company.findByPk(req.params.id, {
+      attributes: {
+        include: [
+          [
+            Sequelize.literal(`
+                      (SELECT AVG(review.rating)
+                      FROM review
+                      WHERE review.company_id=company.id)
+                  `),
+            "avg_rating"
+          ]
+        ]
+      },
+      include: [
+        { model: Review, include: [User]}
+      ]
+    });
+    if (!companyData) {
+      alert('No company found with this id!');
+      return;
+    }
+    const company = companyData.get({ plain: true });
+
+    let reviews = company.reviews;
+
+     reviews = reviews.map((review)=> {
+      console.log(review.date_created);
+      let date = review.date_created;
+      date = date.toString();
+      console.log(typeof date);
+      date = date.split('-');
+      date = date[0].split(' ');
+      console.log(date);
+      review.date_created = `${date[1]} ${date[2]} ${date[3]}`;
+      return review;
+    });
+    
+    res.render('company', {
+      company,
+      logged_in: req.session.logged_in,
+      user_id: req.session.user_id
+    });
+  }
+  catch (err) {
     console.log(err);
   }
 });
