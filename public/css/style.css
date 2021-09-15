@@ -113,16 +113,17 @@ h2 {
 
 
 
-#signup-image {
+#login-image {
   /* height: 100vh; */
-  background-image: url("../images/windmills.jpg");
+  background-image: url("../images/lake.jpg");
   background-size: cover;
   overflow: hidden;
   width: 50%;
 }
 
+#signup-image,
 #mission-image {
-  background-image: url("../images/lake.jpg");
+  background-image: url("../images/windmills.jpg");
   background-size: cover;
   overflow: hidden;
    width: 50%;
