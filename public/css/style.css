@@ -11,12 +11,14 @@
 
 html {
   min-height: 100vh;
+  max-width: 100vw;
 }
 
 body {
   width: 100%;
   position: relative;
-  min-height: 100vh;
+  min-height: 100%;
+  overflow-x: hidden;
 }
 
 /* HEADER STYLES */
@@ -95,15 +97,35 @@ h2 {
   height: 40px;
 }
 
+#mission-container,
+#login-container,
 #signup-container {
   height: 93vh;
+  width: 100%;
+  padding: 0;
 }
+/* 
+#mission-container div,
+#login-container div,
+#signup-container div {
+  width: 100%;
+} */
+
+
 
 #signup-image {
   /* height: 100vh; */
   background-image: url("../images/windmills.jpg");
   background-size: cover;
   overflow: hidden;
+  width: 50%;
+}
+
+#mission-image {
+  background-image: url("../images/lake.jpg");
+  background-size: cover;
+  overflow: hidden;
+   width: 50%;
 }
 
 /* #signup-image {
