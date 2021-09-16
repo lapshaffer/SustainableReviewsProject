@@ -1,4 +1,5 @@
 // Generate a random company to display on the Grove homepage
+const companyLink = document.getElementById("random-company");
 
 const random = async () => {
     const result = await fetch('/api/company/', {
@@ -6,11 +7,13 @@ const random = async () => {
         headers: { 'Content-Type': 'application/json' },
     });
     const companyList = await result.json();
-    const companyNames = companyList.map(company => {
-        company = company.name;
+    const companyArray = companyList.map(company => {
         return company;
     });
-    // use jQuery to grab #random-company and inject a random company name into it
+    var randomNum = Math.floor(Math.random() * companyArray.length);
+    const companyName = companyArray[randomNum].name;
+    const companyId = companyArray[randomNum].id;
+    companyLink.innerHTML = `<a class="col-5" href="/company/` + companyId + `">` + companyName + `</a>`;
 };
 
 random();
