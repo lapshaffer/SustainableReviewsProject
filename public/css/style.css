@@ -116,15 +116,6 @@ h2 {
   width: 75%;
 }
 
-/* 
-#mission-container div,
-#login-container div,
-#signup-container div {
-  width: 100%;
-} */
-
-
-
 #login-image {
   /* height: 100vh; */
   background-image: url("../images/lake.jpg");
@@ -141,14 +132,40 @@ h2 {
    width: 50%;
 }
 
-/* #signup-image {
-  height: 100vh
+/* COMPANY PAGE STYLES */
+#company-overview {
+  min-height: 93vh;
 }
 
-img {
-  max-height: 100vh;
-  width: 50vw;
-} */
+.card {
+  background-color: var(--light-green);
+}
+
+/* WRITE REVIEW */
+
+.star-wrapper div {
+  font-size: 20px;
+}
+
+.star-wrapper:hover {
+  cursor: pointer;
+}
+
+.star-wrapper div:focus,
+.star-wrapper div:hover {
+  text-shadow: 0 0 5px rgb(255, 234, 0);
+}
+
+.star-rating p {
+  font-size: 14px;
+}
+
+#reviewContent {
+  height: 100px;
+}
+
+/* PREVIOUS REVIEWS */
+
 
 /* FOOTER STYLES */
 footer {
