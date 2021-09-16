@@ -71,15 +71,15 @@
         </div>
     </header>
     <main>
-        <div>
+        <div class="container-fluid d-flex flex-column p-0">
             {{{ body }}}
 
         </div>
 
     </main>
-    <footer class="p-2 vw-100">
+    {{!-- <footer class="p-2 vw-100">
         <p class="m-0"><span>&copy;</span> Rachel Chin, Jeff Mullen, Lisa Shaffer <span>&amp;</span> Zack Zaleski</p>
-    </footer>
+    </footer> --}}
 </body>
 {{#if logged_in}}
 <script src="/js/logout.js"></script>

@@ -9,16 +9,16 @@
   --link-green-hover: #095F07;
 };
 
-html {
+/* html {
   min-height: 100vh;
   max-width: 100vw;
-}
+} */
 
 body {
   width: 100%;
   position: relative;
   min-height: 100%;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 /* HEADER STYLES */
@@ -100,13 +100,13 @@ h2 {
   height: 40px;
 }
 
-#mission-container,
+/* #mission-container,
 #login-container,
 #signup-container {
   height: 93vh;
   width: 100%;
   padding: 0;
-}
+} */
 
 #mission-description-wrapper {
   height: 50%;
