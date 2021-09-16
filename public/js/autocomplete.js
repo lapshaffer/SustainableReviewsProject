@@ -9,7 +9,6 @@ const autocomplete = async () => {
       company = company.name;
       return company; 
     });
-    console.log(companyNames);
     $('#company-name-search').autocomplete({
       source: companyNames,
     });

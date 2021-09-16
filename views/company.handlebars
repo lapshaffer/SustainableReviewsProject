@@ -4,25 +4,49 @@
 - Average rating (average compiled from all user reviews)
 - All reviews for that company, showing their title, content and rating -->
 
-<div class="container">
+<div id="company-overview" class="container mt-5">
     <div class="row">
-        <h1>{{company.name}}</h1>
+        <h1 id="company-name" class="text-center">{{company.name}}</h1>
     </div>
-    <div class="row justify-content-around">
-        <div class="col-4">
-            <p><!--Replacing average rating from model (deleted) w/ const from company get route--></p>
+    <div class="row justify-content-around mt-5">
+        <div id="average-rating" class="col-md-4">
+            <p class="text-md-end text-sm-center">
+                Average Rating
+            </p>
         </div>
-        <div class="col-8">
+        <div class="col-md-4 text-md-start text-sm-center">
             <p>{{company.description}}</p>
         </div>
     </div>
-    <div class="row">
+    <div class="row d-flex justify-content-evenly mt-5">
+        <div class="col-4">
+            <div id="write-review" class="card">
+                <h2 class="pl-3 pt-2 pb-2">Review {{company.name}}</h2>
+                <div class="star-rating d-flex">
+                    <div class="star-wrapper col-5 d-flex">
+                        <div data-rating="1" class="col-1">⭐️</div>
+                        <div data-rating="2" class="col-1">⭐️</div>
+                        <div data-rating="3" class="col-1">⭐️</div>
+                        <div data-rating="4" class="col-1">⭐️</div>
+                        <div data-rating="5" class="col-1">⭐️</div>
+                    </div>
+                    <p class="col-7">Choose a rating</p>
+                </div>
+                <form class="write-review-body">
+                    <div class="form-group pl-3 pr-3">
+                        <textarea type="text" class="form-control" id="reviewContent"></textarea>
+                        <button id="reviewSubmit" class="btn btn-success mt-3" data-post-id="{{post.id}}"
+                            data-user-id="{{userId}}">Submit Review</button>
+                    </div>
+                </form>
+            </div>
+        </div>
         {{#if company.reviews.length}}
-        <div class="col">
+        <div class="col-4">
             {{#each company.reviews as |review|}}
             {{> review-details parent=..}}
-{{!--             <div class="card-body">
-            <p>For each review, print the review card that shows the title, rating and content of the review</p>
+            {{!-- <div class="card-body">
+                <p>For each review, print the review card that shows the title, rating and content of the review</p>
             </div> --}}
             {{/each}}
         </div>
