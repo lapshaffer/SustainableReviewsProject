@@ -17,7 +17,7 @@ router.get('/company/:id', async (req, res) => {
     }
 });
 
-// CREATE NEW REVIEW BY COMPANY ID - WORKIN
+// CREATE NEW REVIEW BY COMPANY ID
 router.post('/:id', async (req, res) => {
     try {
         if (!req.session.logged_in) {

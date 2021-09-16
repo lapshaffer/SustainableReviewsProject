@@ -22,15 +22,15 @@
         <div class="col-4">
             <div id="write-review" class="card">
                 <h2 class="pl-3 pt-2 pb-2">Review {{company.name}}</h2>
-                <div class="star-rating d-flex">
+                <div class="star-rating {{!-- d-flex --}}">
                     <div class="star-wrapper col-5 d-flex">
-                        <div data-rating="1" class="col-1">⭐️</div>
-                        <div data-rating="2" class="col-1">⭐️</div>
-                        <div data-rating="3" class="col-1">⭐️</div>
-                        <div data-rating="4" class="col-1">⭐️</div>
-                        <div data-rating="5" class="col-1">⭐️</div>
+                        <div id="one" data-rating="1" class="col-1">⭐️</div>
+                        <div id="two" data-rating="2" class="col-1">⭐️</div>
+                        <div id="three" data-rating="3" class="col-1">⭐️</div>
+                        <div id="four" data-rating="4" class="col-1">⭐️</div>
+                        <div id="five" data-rating="5" class="col-1">⭐️</div>
                     </div>
-                    <p class="col-7">Choose a rating</p>
+                        <p id="ratingDirections" style="display:block" class="col-7">Choose a rating</p>
                 </div>
                 <form class="write-review-body">
                     <div class="form-group pl-3 pr-3">
