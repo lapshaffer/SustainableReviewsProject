@@ -1,4 +1,5 @@
 const loginBtn = document.querySelector('#loginBtn');
+const close = document.querySelector('#closeModal');
 
 const loginForm = async (event) => {
     event.preventDefault();
@@ -15,18 +16,18 @@ const loginForm = async (event) => {
             }),
             headers: { 'Content-type': 'application/json' }
         });
-        console.log(response);
         if (response.ok) {
             document.location.replace('/');
+            console.log("successfully logged in!")
         }
-        // else {
-        //     const loginFailed = document.createElement('p');
-        //     loginFailed.textContent = `Incorrect email or password. Please try again`
-
-        //     loginFailed.append(login);
-        // }
+        else {
+            $('#modal-message').text('Incorrect username and password. Please try again!');
+            $('#myModal').modal('show');
+        }
     };
 }
 
 
 loginBtn.addEventListener('click', loginForm);
+close.addEventListener('click', () => { $('#myModal').modal('hide'); });
+
