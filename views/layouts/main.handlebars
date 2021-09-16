@@ -33,13 +33,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <div class="col-6">
                         <ul class="row navbar-nav me-auto mb-2 mb-lg-0">
-                            {{#if loggedIn}}
+                            {{#if logged_in}}
                             <li class="nav-item col-6">
-                                <a class="nav-link active" aria-current="page" href="#">Logout</a>
+                                <a id="logout" class="nav-link active" aria-current="page" href="#">Logout</a>
                             </li>
                             {{else}}
                             <li class="nav-item col-6 col-lg-4 text-end">
-                                <a class="nav-link" href="#">Login</a>
+                                <a class="nav-link" href="#login-container">Login</a>
                             </li>
                             {{/if}}
                             {{!-- {{#if loggedIn}}
@@ -47,7 +47,7 @@
                                 <a class="nav-link" href="#">{{user.name}}</a>
                             </li>
                             {{/if}} --}}
-                            {{#if loggedIn}}
+                            {{#if logged_in}}
                             <li class="nav-item leave-review col-6">
                                 <a class="nav-link" href="#">Leave a Review</a>
                             </li>
@@ -79,8 +79,10 @@
         <p class="m-0"><span>&copy;</span> Rachel Chin, Jeff Mullen, Lisa Shaffer <span>&amp;</span> Zack Zaleski</p>
     </footer>
 </body>
-{{#if loggedIn}}
+{{#if logged_in}}
 <script src="/js/logout.js"></script>
+{{!-- {{else}}
+<script src="/js/login.js"></script> --}}
 {{/if}}
 <script src="/js/autocomplete.js"></script>
 <script src="/js/search.js"></script>
@@ -89,6 +91,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
     crossorigin="anonymous"></script>
+
 
 
 </html>

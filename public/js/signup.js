@@ -1,4 +1,5 @@
 const signupSubmit = document.querySelector('#signupSubmit');
+const close = document.querySelector('#closeModal');
 
 const signupForm = async (event) => {
     event.preventDefault();
@@ -19,8 +20,16 @@ const signupForm = async (event) => {
         if (response.ok) {
             document.location.replace('/');
         }
+        else {
+            $('#modal-message').text('That username has been taken. Please try again!')
+            $('#myModal').modal('show')
+        }
+    } else {
+        $('#modal-message').text('Please enter a username and password.')
+        $('#myModal').modal('show')
     }
 };
 
 
 signupSubmit.addEventListener('click', signupForm);
+close.addEventListener('click', () => { $('#myModal').modal('hide'); });
