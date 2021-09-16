@@ -7,7 +7,7 @@ var myChart = new Chart(ctx, {
         labels: ['Sample Bad', 'Sample Good', 'Lidl', 'Wegmans', 'WholeFoods', 'Aldi'],
         datasets: [{
             label: 'Stars out of 5',
-            data: [1, 5, 3, 4, 2, 5],
+            data: [0, 5, 3, 4, 2, 4.5],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
