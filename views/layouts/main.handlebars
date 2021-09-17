@@ -19,42 +19,36 @@
 </head>
 
 <body class="container-fluid d-flex flex-column p-0">
-    <header class="container-fluid m-0 p-0">
-        <div class="row-fluid d-flex justify-content-between align-items-center">
-            <div class="col-4 ml-2 py-0">
-                <a class="navbar-brand py-0" id="site-title" href="/">Grove</a>
-            </div>
-            <nav class="navbar navbar-expand-lg py-0 col-6 d-flex justify-content-end">
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand ml-2 py-0" id="site-title" href="/">Grove</a>
                 <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class="col-6">
-                        <ul class="row navbar-nav me-auto mb-2 mb-lg-0">
-                            {{#if logged_in}}
-                            <li class="nav-item col-6">
-                                <a id="logout" class="nav-link active" aria-current="page" href="#">Logout</a>
-                            </li>
-                            {{else}}
-                            <li class="nav-item col-6 col-lg-4 text-end">
-                                <a class="nav-link" href="/#login-container">Login</a>
-                            </li>
-                            {{/if}}
-                        </ul>
-                    </div>
-                    <div class="col-6 d-flex align-items-center">
-                        <form class="d-flex justify-content-end">
-                            <!--Search bar to look for company, will need to add jQuery to auto-populate company names as user types-->
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
-                                id="company-name-search">
-                            <button id="search" class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
-                    </div>
+                <div class="collapse navbar-collapse ml-3" id="navbarSupportedContent">
+                    <ul class="row navbar-nav me-auto mb-2 mb-lg-0 mt-2 mt-lg-0">
+                        {{#if logged_in}}
+                        <li class="nav-item pl-0">
+                            <a id="logout" class="nav-link active" aria-current="page" href="#">Logout</a>
+                        </li>
+                        {{else}}
+                        <li class="nav-item pl-0">
+                            <a class="nav-link" href="/#login-form">Login</a>
+                        </li>
+                        {{/if}}
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                            id="company-name-search">
+                        <button id="search" class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
+
     </header>
     <main class="row-fluid">
 

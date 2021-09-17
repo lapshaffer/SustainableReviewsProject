@@ -34,6 +34,7 @@ header button.btn {
 
 header a.nav-link {
   color: var(--background);
+  border-top: 1px solid var(--light-green);
 }
 
 header a:hover {
@@ -185,4 +186,10 @@ footer p {
 canvas {
   max-width: 500px;
   max-height: 800px;
+}
+
+@media (min-width: 992px) {
+  header a.nav-link {
+    border-top: none;
+  }
 }
