@@ -27,6 +27,15 @@ npm i
       
 # Test Instructions
 
+* GIVEN a website where users want to review a company
+* WHEN the user searches for a company
+* THEN the reviews for that company are displayed
+* WHEN the user creates an account
+* THEN they are able to write their own reviews
+* WHEN the user logs out
+* THEN their credentials are stored and they can log in any time
+
+
 
 # License
 * [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -36,7 +45,7 @@ npm i
 
 # Email
 Any questions? Please email us at:
-* [kingcrowz@comcast.net](mailto:kingcrowz@comcast.net)
+* [kingcrowz](mailto:kingcrowz@comcast.net)
 * [lapshaffer](mailto:lapshaffer@gmail.com)
 * [chillaroo](mailto:rtc145@gmail.com)
 * [jeffMullen](mailto:jeffmullendev@gmail.com)
