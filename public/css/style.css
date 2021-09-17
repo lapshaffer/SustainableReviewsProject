@@ -10,14 +10,11 @@
 };
 
 html {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   max-width: 100vw;
 }
 
 body {
-  width: 100%;
-  position: relative;
-  min-height: 100%;
   overflow-x: hidden;
 }
 
@@ -100,13 +97,13 @@ h2 {
   height: 40px;
 }
 
-#mission-container,
+/* #mission-container,
 #login-container,
 #signup-container {
   height: 93vh;
   width: 100%;
   padding: 0;
-}
+} */
 
 #mission-description-wrapper {
   height: 50%;
@@ -127,6 +124,13 @@ h2 {
 #signup-image,
 #mission-image {
   background-image: url("../images/windmills.jpg");
+  background-size: cover;
+  overflow: hidden;
+   width: 50%;
+}
+
+#chart-image {
+  background-image: url("../images/vertical-trees.jpg");
   background-size: cover;
   overflow: hidden;
    width: 50%;
@@ -170,8 +174,6 @@ h2 {
 /* FOOTER STYLES */
 footer {
   text-align: center;
-  position: absolute;
-  bottom: 0;
   width: 100%;
   background: var(--dark-green);
 }
@@ -181,6 +183,6 @@ footer p {
 }
 
 canvas {
-  max-width: 200px;
-  max-height: 300px;
+  max-width: 500px;
+  max-height: 800px;
 }
