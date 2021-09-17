@@ -1,7 +1,8 @@
 # SustainableReviewsProject
+Deployment: [Grove](http://obscure-ocean-20287.herokuapp.com/)
 
 # Description
-A site where users can post and view reviews on the sustainability of commercial brands
+A site where users can post and view reviews on the sustainability of commercial brands.  The site partially operates on a by-user basis, meaning that posting reviews is restricted to only logged-in users.  The rating system is based out of 5 stars, a description is manditory for reviews to ensure that review bombing in either direction isn't as easy.  
 
 
 ## Table of Contents
@@ -28,7 +29,9 @@ npm i
 
 
 # License
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+* [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+* [![License: BSD-2-Clause](https://img.shields.io/badge/License-BSD2Clause-red.svg)](https://opensource.org/licenses/BSD-2-Clause)
+* [![License: BSD-3-Clause](https://img.shields.io/badge/License-BSD3Clause-red.svg)](https://opensource.org/licenses/BSD-3-Clause)
 # Questions
 
 # Email
