@@ -163,6 +163,8 @@ h2 {
 
 .star-rating p {
   font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
 }
 
 #reviewContent {
