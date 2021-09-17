@@ -69,6 +69,18 @@ a:hover {
   color: var(--link-green-hover);
 }
 
+#mission-description-wrapper {
+  height: 50%;
+}
+
+#mission-description-wrapper p {
+  font-size: 14px;
+}
+
+.mission-description {
+  width: 75%;
+}
+
 #featured-company {
   padding: 15px 0;
   border: 1px solid var(--light-green);
@@ -79,8 +91,13 @@ a:hover {
 }
 
 #featured-company h3 {
-  font-size: 24px;
-  border-right: 1px solid var(--light-green);
+  font-size: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--light-green);
+}
+
+#featured-company p {
+  font-size: 16px;
 }
 
 /* LOGIN and SIGNUP STYLES */
@@ -98,24 +115,7 @@ h2 {
   height: 40px;
 }
 
-/* #mission-container,
-#login-container,
-#signup-container {
-  height: 93vh;
-  width: 100%;
-  padding: 0;
-} */
-
-#mission-description-wrapper {
-  height: 50%;
-}
-
-.mission-description {
-  width: 75%;
-}
-
 #login-image {
-  /* height: 100vh; */
   background-image: url("../images/lake.jpg");
   background-size: cover;
   overflow: hidden;
@@ -169,8 +169,6 @@ h2 {
   height: 100px;
 }
 
-/* PREVIOUS REVIEWS */
-
 
 /* FOOTER STYLES */
 footer {
@@ -189,10 +187,19 @@ footer p {
   width: 90%;
 }
 
-/* canvas {
-  max-width: 300px;
-  max-height: 800px;
-} */
+@media (min-width: 375px) {
+  #mission-description-wrapper p {
+    font-size: 17px;
+  }
+
+  #featured-company h3 {
+    font-size: 24px;
+  }
+  
+  #featured-company p {
+    font-size: 18px;
+  }
+}
 
 @media (min-width: 550px) {
   .chart-wrapper {
