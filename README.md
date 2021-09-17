@@ -10,7 +10,6 @@ A site where users can post and view reviews on the sustainability of commercial
 * [Installation Guidelines](#Installation-Guidelines)
 * [Usage Information](#Usage-Information)
 * [Contribution Guidelines](#Contribution-Guidelines)
-* [Test Instructions](#Test-Instructions)
 * [License](#License)
 * [Questions](#Questions)
 
@@ -21,12 +20,6 @@ npm i
       
 # Usage Information
 
-      
-# Contribution Guidelines
-
-      
-# Test Instructions
-
 * GIVEN a website where users want to review a company
 * WHEN the user searches for a company
 * THEN the reviews for that company are displayed
@@ -35,6 +28,9 @@ npm i
 * WHEN the user logs out
 * THEN their credentials are stored and they can log in any time
 
+      
+# Contribution Guidelines
+* Contributions must be reviewed by at least one other contributor before they can be approved and merged.
 
 
 # License
