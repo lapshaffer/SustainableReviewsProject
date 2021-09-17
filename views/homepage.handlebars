@@ -47,12 +47,14 @@
         </div>
     </div>
 </div>
+{{!-- CHART CONTAINER --}}
 <div id="chart-container" class="row-fluid d-flex flex-column flex-lg-row p-0">
     <div id="chart-image" class="col-12 col-lg-6 order-1 order-lg-2 vh-100 vw-100 p-0">
     </div>
-    <div class="col-12 col-lg-6 order-2 order-lg-1 vh-100 p-0 d-flex justify-content-center align-items-center">
+    <div
+        class="col-12 col-lg-6 order-2 order-lg-1 vh-100 p-0 d-flex justify-content-center align-items-center text-center">
         {{!-- CHART JS CHART --}}
-        <div class="row-fluid w-75 d-flex flex-column justify-content-center">
+        <div class="chart-wrapper d-flex flex-column align-items-center justify-content-center">
             <canvas id="myChart" width="50" height="50"></canvas>
         </div>
     </div>
