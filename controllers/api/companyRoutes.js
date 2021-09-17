@@ -53,7 +53,18 @@ router.get('/:id', async (req, res) => {
 // GET ALL COMPANIES
 router.get('/', async (req, res) => {
     try {
-        const companyData = await Company.findAll({ include: [{ model: Review }] });
+        const companyData = await Company.findAll({   attributes: {
+            include: [
+                [
+                    Sequelize.literal(`
+                        (SELECT AVG(review.rating)
+                        FROM review
+                        WHERE review.company_id=company.id)
+                    `),
+                    "avg_rating"
+                ]
+            ]
+        }});
         res.status(200).json(companyData);
     } catch (err) {
         res.status(400).json(err);
