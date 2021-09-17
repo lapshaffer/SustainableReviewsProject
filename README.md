@@ -1,5 +1,6 @@
 # SustainableReviewsProject
-Deployment: [Grove](http://obscure-ocean-20287.herokuapp.com/)
+* Deployment: [Grove](http://obscure-ocean-20287.herokuapp.com/)
+* Demo Video: [Grove Demo](https://watch.screencastify.com/v/8ljDLy9G1yYSiaC7xGwg)
 
 # Description
 A site where users can post and view reviews on the sustainability of commercial brands.  The site partially operates on a by-user basis, meaning that posting reviews is restricted to only logged-in users.  The rating system is based out of 5 stars, a description is manditory for reviews to ensure that review bombing in either direction isn't as easy.  
