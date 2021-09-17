@@ -36,8 +36,10 @@ npm i
 
 # Email
 Any questions? Please email us at:
-ADD EMAILS HERE
-
+* [kingcrowz@comcast.net](mailto:kingcrowz@comcast.net)
+* [lapshaffer](mailto:lapshaffer@gmail.com)
+* [chillaroo](mailto:rtc145@gmail.com)
+* [jeffMullen](mailto:jeffmullendev@gmail.com)
 
 # Github
 If you'd like to see more of our work, please visit:
