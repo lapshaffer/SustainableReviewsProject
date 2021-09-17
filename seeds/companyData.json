@@ -16,5 +16,23 @@
         "description": "Soup producer",
         "industry": "Manufactuering",
         "number_reviews": 142
+    },
+    {
+        "name": "Subway SAMPLE",
+        "description": "5$footLongs",
+        "industry": "Food",
+        "number_reviews": 1
+    },
+    {
+        "name": "Jim's Steaks SAMPLE",
+        "description": "philly cheesesteaks",
+        "industry": "Food",
+        "number_reviews": 100
+    },
+    {
+        "name": "Lidl SAMPLE",
+        "description": "Super-market",
+        "industry": "Food and more",
+        "number_reviews": 50
     }
 ]
