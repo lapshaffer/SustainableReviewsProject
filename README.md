@@ -10,7 +10,6 @@ A site where users can post and view reviews on the sustainability of commercial
 * [Installation Guidelines](#Installation-Guidelines)
 * [Usage Information](#Usage-Information)
 * [Contribution Guidelines](#Contribution-Guidelines)
-* [Test Instructions](#Test-Instructions)
 * [License](#License)
 * [Questions](#Questions)
 
@@ -31,6 +30,7 @@ npm i
 
       
 # Contribution Guidelines
+* Contributions must be reviewed by at least one other contributor before they can be approved and merged.
 
 
 # License
