@@ -28,6 +28,6 @@ const loginForm = async (event) => {
 }
 
 
-loginBtn.addEventListener('click', loginForm);
-close.addEventListener('click', () => { $('#myModal').modal('hide'); });
+loginBtn && loginBtn.addEventListener('click', loginForm);
+close && close.addEventListener('click', () => { $('#myModal').modal('hide'); });
 
