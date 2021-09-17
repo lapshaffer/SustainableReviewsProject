@@ -47,9 +47,23 @@
         </div>
     </div>
 </div>
+<div id="chart-container" class="row-fluid d-flex flex-column flex-lg-row p-0">
+    <div id="chart-image" class="col-12 col-lg-6 order-1 order-lg-2 vh-100 vw-100 p-0">
+    </div>
+    <div class="col-12 col-lg-6 order-2 order-lg-1 vh-100 p-0 d-flex justify-content-center align-items-center">
+        {{!-- CHART JS CHART --}}
+        <div class="row-fluid w-75 d-flex flex-column justify-content-center">
+            <canvas id="myChart" width="50" height="50"></canvas>
+        </div>
+    </div>
+</div>
+{{#if logged_in}}
+{{else}}
 <div id="login-container" class="row-fluid d-flex flex-column flex-lg-row p-0">
     {{!-- Large login image --}}
-    <div class="col-12 col-lg-6 order-2 order-lg-1 vh-100 p-0 d-flex justify-content-center">
+    <div id="login-image" class="col-12 col-lg-6 vh-100 vw-100 p-0">
+    </div>
+    <div class="col-12 col-lg-6 vh-100 p-0 d-flex justify-content-center">
         <div class="row-fluid w-75 d-flex flex-column justify-content-center">
             <h2>Login</h2>
 
@@ -72,12 +86,9 @@
             {{/if}}
         </div>
     </div>
-    <div id="login-image" class="col-12 col-lg-6 order-1 order-lg-2 vh-100 vw-100 p-0">
-    </div>
-    {{!-- CHART JS CHART --}}
-    {{!-- <div>
-        <canvas id="myChart" width="50" height="50"></canvas>
-    </div> --}}
+    {{/if}}
+
+
 </div>
 
 <script src="./js/login.js"></script>
