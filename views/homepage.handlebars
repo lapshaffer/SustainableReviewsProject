@@ -23,36 +23,37 @@
     <div id="mission-image" class="col-12 col-lg-6 vh-100 vw-100 p-0">
     </div>
     {{!-- MISSION CONTENT --}}
-    <div class="col-12 col-lg-6 vh-100 p-0 d-flex justify-content-center">
-        <div class="row-fluid w-100 d-flex flex-column justify-content-evenly align-items-center text-center"
-            id="mission">
-            <div id="mission-description-wrapper"
-                class="row-fluid d-flex p-0 flex-column align-items-center justify-content-evenly">
-                <p class="col-5 mission-description">Grove is a collaborative website, built by consumers, to
-                    share
-                    their experiences
-                    with commercial
-                    companies' sustainability practices.</p>
-                <p class="col-5 mission-description">Search for a company in the search bar above to view
-                    reviews
-                    from consumers and
-                    employees!</p>
-            </div>
-            <div id="featured-company" class="d-flex justify-self-start text-center">
+    <div class="col-lg-6 row-fluid vh-100 w-100 d-flex flex-column justify-content-center align-items-center text-center"
+        id="mission">
+        <div id="mission-description-wrapper"
+            class="col-12 row-fluid d-flex p-0 flex-column align-items-center justify-content-evenly">
+            <p class="col-12 mission-description">Grove is a collaborative website, built by consumers, to
+                share
+                their experiences
+                with commercial
+                companies' sustainability practices.</p>
+            <p class="col-12 mission-description">Search for a company in the search bar above to view
+                reviews
+                from consumers and
+                employees!</p>
+        </div>
+        <div id="featured-company"
+            class="col-12 d-flex flex-column justify-content-evenly align-items-center text-center">
 
-                <h3 class="col-5">Featured Company</h3>
+            <h3 class="col-10">Featured Company</h3>
 
-                <p id="random-company"></p>
-            </div>
+            <p id="random-company" class="col-12"></p>
         </div>
     </div>
 </div>
+{{!-- CHART CONTAINER --}}
 <div id="chart-container" class="row-fluid d-flex flex-column flex-lg-row p-0">
     <div id="chart-image" class="col-12 col-lg-6 order-1 order-lg-2 vh-100 vw-100 p-0">
     </div>
-    <div class="col-12 col-lg-6 order-2 order-lg-1 vh-100 p-0 d-flex justify-content-center align-items-center">
+    <div
+        class="col-12 col-lg-6 order-2 order-lg-1 vh-100 p-0 d-flex justify-content-center align-items-center text-center">
         {{!-- CHART JS CHART --}}
-        <div class="row-fluid w-75 d-flex flex-column justify-content-center">
+        <div class="chart-wrapper d-flex flex-column align-items-center justify-content-center">
             <canvas id="myChart" width="50" height="50"></canvas>
         </div>
     </div>
