@@ -24,7 +24,10 @@ const loginForm = async (event) => {
             $('#modal-message').text('Incorrect username and password. Please try again!');
             $('#myModal').modal('show');
         }
-    };
+    } else {
+        $('#modal-message').text('Please enter a username and password.');
+        $('#myModal').modal('show');
+    }
 }
 
 
