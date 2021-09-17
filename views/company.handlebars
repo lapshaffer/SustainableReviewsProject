@@ -19,6 +19,7 @@
         </div>
     </div>
     <div class="row d-flex justify-content-evenly mt-5">
+    {{#if logged_in}}
         <div class="col-4">
             <div id="write-review" class="card">
                 <h2 class="pl-3 pt-2 pb-2">Review {{company.name}}</h2>
@@ -41,6 +42,9 @@
                 </form>
             </div>
         </div>
+        {{else}}
+        <p>If you would like to write a review for this company, please <a href="/#login-container">Log in!</a></p>
+        {{/if}}
         {{#if company.reviews.length}}
         <div class="col-4">
             {{#each company.reviews as |review|}}
@@ -52,7 +56,6 @@
         </div>
         {{else}}
         <p>There are no reviews for {{company.name}} yet. Would you like to write a review?</p>
-        <a href="#">Write a review</a>
         {{/if}}
     </div>
 </div>
