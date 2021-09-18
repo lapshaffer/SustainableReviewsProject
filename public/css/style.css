@@ -5,17 +5,18 @@
   --light-brown: #51291E;
   --dark-brown: #301014;
   --heading-font: 'Slabo 27px', serif;
+  --content-font: 'Source Sans Pro', sans-serif;
   --link-green: #0D940B;
   --link-green-hover: #095F07;
 };
 
 html {
-  /* min-height: 100vh; */
   max-width: 100vw;
 }
 
 body {
   overflow-x: hidden;
+  font-family: var(--content-font);
 }
 
 /* HEADER STYLES */
@@ -142,11 +143,22 @@ h2 {
   min-height: 93vh;
 }
 
+#company-overview h1 {
+  font-family: var(--content-font);
+}
+
+#company-info div p {
+  font-size: 20px;
+}
+
 .card {
   background-color: var(--light-green);
 }
 
 /* WRITE REVIEW */
+#average-rating-num {
+  font-weight: bold;
+}
 
 .star-wrapper div {
   font-size: 20px;
