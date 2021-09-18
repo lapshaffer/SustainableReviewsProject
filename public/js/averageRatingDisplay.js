@@ -10,7 +10,7 @@ const displayRating = async () => {
         headers: { 'Content-Type': 'application/json' },
     });
     const companyData = await result.json();
-    const companyAvgReview = companyData.avg_rating;
+    const companyAvgReview = companyData.avg_rating || "No Ratings";
     ratingDisplay.innerHTML = `${companyAvgReview}`;
 };
 

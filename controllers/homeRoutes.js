@@ -100,4 +100,11 @@ router.get('/company/:id', async (req, res) => {
   }
 });
 
+router.get('/addcompany',(req,res)=>{
+  res.render('addCompany',{
+    logged_in: req.session.logged_in,
+    user_id: req.session.user_id
+  });
+});
+
 module.exports = router;
