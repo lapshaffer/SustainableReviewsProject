@@ -8,7 +8,7 @@
     <div class="row">
         <h1 id="company-name" class="text-center">{{company.name}}</h1>
     </div>
-    <div class="row justify-content-center justify-content-md-around mt-5 text-center">
+    <div id="company-info" class="row justify-content-center justify-content-md-around mt-5 text-center">
         <div id="average-rating" class="col-md-4">
             <p class="text-md-end text-sm-center">
                 Average Rating: <span id="average-rating-num"></span>
@@ -24,7 +24,7 @@
             <div id="write-review" class="card w-100 w-sm-75">
                 <h2 class="pl-3 pt-2 pb-2">Review {{company.name}}</h2>
                 <div class="star-rating d-flex flex-column justify-content-center">
-                    <p id="ratingDirections" style="display:block" class="col-6 text-center">Choose a rating</p>
+                    <p id="ratingDirections" style="display:block" class="col-6 ml-2 text-start">Choose a rating</p>
                     <div class="star-wrapper col-6 d-flex">
                         <div id="one" data-rating="1" class="col-1">⭐️</div>
                         <div id="two" data-rating="2" class="col-1">⭐️</div>
@@ -51,13 +51,10 @@
         <div class="col-12 d-flex flex-wrap justify-content-evenly">
             {{#each company.reviews as |review|}}
             {{> review-details parent=..}}
-            {{!-- <div class="card-body">
-                <p>For each review, print the review card that shows the title, rating and content of the review</p>
-            </div> --}}
             {{/each}}
         </div>
         {{else}}
-        <p>There are no reviews for {{company.name}} yet. Would you like to write a review?</p>
+        <p class="text-center">There are no reviews for {{company.name}} yet. Would you like to write a review?</p>
         {{/if}}
     </div>
 </div>

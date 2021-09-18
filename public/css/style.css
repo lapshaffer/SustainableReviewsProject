@@ -147,11 +147,18 @@ h2 {
   font-family: var(--content-font);
 }
 
+#company-info div p {
+  font-size: 20px;
+}
+
 .card {
   background-color: var(--light-green);
 }
 
 /* WRITE REVIEW */
+#average-rating-num {
+  font-weight: bold;
+}
 
 .star-wrapper div {
   font-size: 20px;

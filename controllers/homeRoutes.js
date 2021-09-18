@@ -30,15 +30,9 @@ router.get('/login', (req, res) => {
 });
 
 router.get('/signup', async (req, res) => {
-  // If the user is already logged in, redirect the request to another route
-/*   if (req.session.logged_in) {
-    res.redirect('/profile');
-    return;
-  } */
   try {
     const imageData = await Image.findAll({});
     const image = imageData[0].get({ plain: true });
-    console.log(image)
     res.render('signup', {
       image
     });
@@ -100,8 +94,8 @@ router.get('/company/:id', async (req, res) => {
   }
 });
 
-router.get('/addcompany',(req,res)=>{
-  res.render('addCompany',{
+router.get('/addcompany', (req, res) => {
+  res.render('addCompany', {
     logged_in: req.session.logged_in,
     user_id: req.session.user_id
   });
