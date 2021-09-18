@@ -31,5 +31,5 @@ const signupForm = async (event) => {
 };
 
 
-signupSubmit.addEventListener('click', signupForm);
-close.addEventListener('click', () => { $('#myModal').modal('hide'); });
+signupSubmit && signupSubmit.addEventListener('click', signupForm);
+close && close.addEventListener('click', () => { $('#myModal').modal('hide'); });
