@@ -1,7 +1,3 @@
-//HOW MANY CHARACTERS OF PRECISION
-
-/* const { response } = require("express"); */
-
 window.addEventListener('DOMContentLoaded', () => {
 
     var ctx = document.getElementById('myChart').getContext('2d');
@@ -10,7 +6,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
     async function makeChart() {
-        //FETCH 
         const response = await fetch('/api/company/', {
             method: 'GET',
             headers: {

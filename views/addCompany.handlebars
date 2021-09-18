@@ -1,0 +1,51 @@
+{{!-- 
+<div id="myModal" class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="mySmallModalLabel">Error</h4>
+                <button id="closeModal" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div id="modal-message" class="modal-body">
+            </div>
+        </div>
+    </div>
+</div> --}}
+
+<div id="signup-container" class="row-fluid d-flex flex-column flex-lg-row p-0">
+
+    {{!-- Large signup image --}}
+    <div id="signup-image" class="col-12 col-lg-6 order-2 order-lg-1 vh-100 vw-100 p-0">
+        {{!-- <img src="/images/{{image.filename}}" alt="{{image.description}}"> --}}
+    </div>
+
+    <div class="col-12 col-lg-6 order-1 order-lg-2 vh-100 p-0 d-flex justify-content-center">
+        <div class="row w-75 d-flex flex-column justify-content-center">
+            <h2>Add Company</h2>
+
+            <form class="form signup-form">
+                <div class="form-group">
+                    <label for="companyName">Company Name:</label>
+                    <input class="form-input" type="text" id="companyName" />
+                </div>
+                <div class="form-group">
+                    <label for="industry">Industry:</label>
+                    <input class="form-input" type="text" id="industry" />
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Description:</label>
+                    <textarea class="form-control" id="companyDescription" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary my-2" id="addCompany" type="submit">Add</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<script src="/js/addCompany.js"></script>
